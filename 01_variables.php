@@ -13,6 +13,8 @@ $curso ="PHP";
 $avance =true;
 $complete=false;
 $nota=10;
+$edadOne=29;
+$esEstudiante=false;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -84,6 +86,18 @@ $nota=10;
     } else{
         echo"$nombre Angel,Desaprobado";
     }
+
+    ?>
+
+    <br>
+
+    <?php 
+    if($esEstudiante || $edadOne < 21) {
+        echo "si cuenta con descuento aplicado.";
+    } else{
+        echo "No cuenta con descuento aplicado .";
+    }
+
 
     ?>
 </body>
